@@ -6,8 +6,6 @@ let place1;
 let place2;
 let place3;
 
-let mic;
-
 
 function preload(){
   splat = loadImage('Winner.png');
@@ -23,8 +21,6 @@ function setup() {
   place2 = random(0,windowWidth);
   place3 = random(0, windowWidth);
   
-  mic = new p5.AudioIn();
-  mic.start();
   
  createCanvas(windowWidth,windowHeight);
 }
@@ -32,7 +28,6 @@ function setup() {
 
 function draw() {
   background(0);
-  micLevel = 10000*(mic.getLevel());
   textSize(40);
   fill(102, 32, 140);
   
@@ -44,11 +39,8 @@ function draw() {
   if(mouseY>200&&mouseY<400){
     image (splat2,place2,350);
   }
-  
   imageMode(CORNER);
   image(splat3,300,250,mouseX,mouseY);
   
-  
-  //console.log(micLevel);
 }
 
