@@ -10,11 +10,11 @@ let mic;
 
 
 function preload(){
-  splat = loadImage('images/Winner.png');
+  splat = loadImage('Winner.png');
   
-  splat2 = loadImage('images/Shiver.png');
+  splat2 = loadImage('Shiver.png');
   
-  splat3 = loadImage ('images/SP20.png');
+  splat3 = loadImage ('SP20.png');
   
 }
 function setup() {
